@@ -1,7 +1,7 @@
 
-for (let i = 4; i >= 1; i--) {
-  let row = "";         
-    for (let j = 1; j <= i; j++) {
+for (var i = 4; i >= 1; i--) {
+  var row = "";         
+    for (var j = 1; j <= i; j++) {
         row += "* ";
     }
     console.log(row);
