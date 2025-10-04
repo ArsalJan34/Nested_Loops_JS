@@ -8,7 +8,7 @@ var arr = [
   [19,20,21]
 ];
 
-var minSum = 0;
+var minSum = Infinity;
 var minRowIndex = 0;
 
 for (var i = 0; i < arr.length; i++) {
@@ -16,9 +16,11 @@ for (var i = 0; i < arr.length; i++) {
   for (var j = 0; j < arr[i].length; j++) {
     rowSum += arr[i][j];
   }
+
   if (rowSum < minSum) {
     minSum = rowSum;
     minRowIndex = i;
   }
 }
-console.log( minRowIndex + 1, " largest sum =", minSum);
+
+console.log("Row", minRowIndex + 1, "has the smallest sum =", minSum);
